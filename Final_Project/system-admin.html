@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Michael & Imaan
+    
+</title>
+<link rel="icon" type="image/x-icon" href="bebo.png">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="normalize-css-library.css">
+<link rel="stylesheet" href="admin-page.css">
+<head></head>
+<body class="w3-content" style="max-width:1300px">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#back-image{background-image:url("crayons.jpg)")}
+
+/* Add padding to containers */
+.container {
+    background-image: url("crayons.jpg");
+  padding: 16px;
+  background-color: rgb(131, 29, 29);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+#header {
+    font-family: 'Teko', sans-serif;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.cir {
+    
+   object-fit: cover;
+   width: 600px;
+   height: 600px;
+   max-width: 100%;
+    max-height: 100%;
+
+}
+
+#already {
+    color: black;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #181a19;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #1d8db9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  background-color: transparent;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(14, 10, 10, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+    </style>
+
+<div class="w3-row">
+    <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+      <div class="w3-padding-64">
+        <!--<img src="logo.png" class="w3" alt="logo" style="width:25%"> -->
+      </div>
+      <div class="w3-padding-64">
+        <a href="#popup" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+        <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Gallery</a>
+        <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">About Us</a>
+        <a href="#popup" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Login</a>
+      </div>
+    </div>
+    <div class="w3-half w3-white w3-container" style="height:700px; padding-top:0px">
+      <div class="w3-padding-0 w3-center">
+        <label id="lblGreetings"></label>
+    
+    
+    <script>
+        var myDate = new Date();
+        var hrs = myDate.getHours();
+    
+        var greet;
+    
+        if (hrs < 12)
+            greet = 'Good Morning';
+        else if (hrs >= 12 && hrs <= 17)
+            greet = 'Good Afternoon';
+        else if (hrs >= 17 && hrs <= 24)
+            greet = 'Good Evening';
+    
+        document.getElementById('lblGreetings').innerHTML =
+            '<b>' + greet + '</b> and welcome to Imaan & Michael!';
+    </script> 
+    <br><br
+     <img src="school.jpg" class="cir" alt="library">
+    </div>
+  </div>
+  
+
+
+<!-- Third Grid: Address & Login -->
+<div class="w3-row" id="back-image">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:800px">
+    <div class="w3-padding-64">
+      <h1>Contact Us</h1>
+    </div>
+    <div class="w3-padding-64">
+      <p>...Johanneburg South Africa</p>
+      <p>...Durban South Africa</p>
+      <p>+27 970 9098 00</p>
+      <p>enrollment@education.co.za</p>
+    </div>
+  </div>
+  <div class="w3-half w3-teal w3-container" style="height:800px">
+    <div class="w3-padding-64 w3-padding-large">
+        <div class="main-part">
+            <div class="cpanel">
+            <div class="icon-part">
+            <i class="fa fa-users" aria-hidden="true"></i><br>
+            <small>Members</small>
+            <p>985</p>
+            </div>
+            <div class="card-content-part">
+            <a href="#">More Details </a>
+            </div>
+            </div>
+            <div class="cpanel cpanel-green">
+            <div class="icon-part">
+            <i class="fa fa-money" aria-hidden="true"></i><br>
+            <small>Account</small>
+            <p>$ 452</p>
+            </div>
+            <div class="card-content-part">
+            <a href="#">More Details </a>
+            </div>
+            </div>
+            <div class="cpanel cpanel-orange">
+            <div class="icon-part">
+            <i class="fa fa-bell" aria-hidden="true"></i><br>
+            <small>Alert</small>
+            <p>11 New</p>
+            </div>
+            <div class="card-content-part">
+            <a href="#">More Details </a>
+            </div>
+            </div>
+            <div class="cpanel cpanel-blue">
+            <div class="icon-part">
+            <i class="fa fa-tasks" aria-hidden="true"></i><br>
+            <small>Task</small>
+            <p>85</p>
+            </div>
+            <div class="card-content-part">
+            <a href="#">More Details </a>
+            </div>
+            </div>
+            <div class="cpanel cpanel-red">
+            <div class="icon-part">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i><br>
+            <small>Cart</small>
+            <p>$ 45</p>
+            </div>
+            <div class="card-content-part">
+            <a href="#">More Details </a>
+            </div>
+            </div>
+            <div class="cpanel cpanel-skyblue">
+            <div class="icon-part">
+            <i class="fa fa-comments" aria-hidden="true"></i><br>
+            <small>Mentions</small>
+            <p>104</p>
+            </div>
+            <div class="card-content-part">
+            <a href="#">More Details </a>
+            </div>
+            </div>
+            </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+  <p id="copyright"> Powered by @ Imaan & Michael  &copy; All Rights Reserved 2022</p>
+</footer>
+
+</body>
+</html>
