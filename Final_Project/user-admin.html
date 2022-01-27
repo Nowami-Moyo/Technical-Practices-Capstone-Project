@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="normalize-css-library.css">
 <link rel="stylesheet" href="admin-page.css">
 <link rel="stylesheet" href="user-admin.css">
+<link rel="stylesheet" href="form.css">
 <head></head>
 <body class="w3-content" style="max-width:1300px">
     <style>
@@ -227,10 +228,10 @@ span.psw {
         <!--<img src="logo.png" class="w3" alt="logo" style="width:25%"> -->
       </div>
       <div class="w3-padding-64">
-        <a href="#popup" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
-        <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Gallery</a>
-        <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">About Us</a>
-        <a href="#popup" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Login</a>
+        <a href="home-page.html" styleclass="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+      <a href="form.html" styleclass="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Registration</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">About Us</a>
+      <a href="w3-half w3-teal w3-container" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Login</a>
       </div>
     </div>
     <div class="w3-half w3-white w3-container" style="height:700px; padding-top:0px">
@@ -252,10 +253,12 @@ span.psw {
             greet = 'Good Evening';
     
         document.getElementById('lblGreetings').innerHTML =
-            '<b>' + greet + '</b> and welcome to Imaan & Michael!';
+            '<b>' + greet + '</b> and welcome to the registration page';
     </script> 
-    <br><br
-     <img src="school.jpg" class="cir" alt="library">
+    <p>Please click the below button to begin registration</p>
+    <button onclick="location.href='form.html'" type="button">
+      Fill in Form</button>
+      <img src="crayons.jpg" class="cir" alt="library">
     </div>
   </div>
   
